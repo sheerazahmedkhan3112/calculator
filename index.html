@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div class="header">
+        Calculator :
+    </div>
+    <div class="calculator">
+        <table border="10" cellspacing="10">
+            <tr>
+                <th colspan="4" class="inputField"><input type="text" placeholder="Calculate"></th>
+            </tr>
+            <tr>
+                <th colspan="2" onclick="emptyField()">CE</th>
+                <th onclick="getValue(event)">*</th>
+                <th onclick="getValue(event)">/</th>
+            </tr>
+            <tr>
+                <th onclick="getValue(event)">7</th>
+                <th onclick="getValue(event)">8</th>
+                <th onclick="getValue(event)">9</th>
+                <th onclick="getValue(event)">-</th>
+            </tr>
+            <tr>
+                <th onclick="getValue(event)">4</th>
+                <th onclick="getValue(event)">5</th>
+                <th onclick="getValue(event)">6</th>
+                <th onclick="getValue(event)">+</th>
+            </tr>
+            <tr>
+                <th onclick="getValue(event)">1</th>
+                <th onclick="getValue(event)">2</th>
+                <th onclick="getValue(event)">3</th>
+                <th rowspan="2" onclick="calci()">=</th>
+            </tr>
+            <tr>
+                <th onclick="getValue(event)">0</th>
+                <th onclick="getValue(event)">.</th>
+                <th onclick="getValue(event)">%</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./App.js"></script>
+</body>
+</html>
